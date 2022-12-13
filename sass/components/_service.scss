@@ -1,0 +1,39 @@
+.service {
+    background: url("../images/img_hero.jpg");
+    background-blend-mode: overlay;
+    padding: 200px $container-padding;
+    position: relative;
+    text-align: center;
+    filter: drop-shadow(0px 5px 8px #0000002a);
+  
+  }
+.service__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    width: 700px;
+    margin: 20px auto;
+    color: $primary-white-color;
+    font-size: 44px;
+    position: relative;
+    z-index: 5;
+}
+.service__button{
+    position: relative;
+    z-index: 5;
+}
+.service__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    background-color: $background-black-240Perc;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,32 @@
+.benefits__list {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+
+    li {
+      list-style: none;
+      width: 290px;
+      padding: 10px;
+    }
+  }
+  .benefits__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: $gray-1;
+    border-radius: 10px;
+    height: 120px;
+    margin-bottom: 15px;
+    width: 26 0px;
+  }
+  .benefits__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .benefits__title{
+    height: 50px;
+    text-transform: uppercase;
+    color: $primary-black-color;
+  }

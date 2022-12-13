@@ -1,0 +1,115 @@
+.page-header{
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    background-color: $primary-white-color;
+  
+    border: 1px solid #ECECEC;
+    filter: drop-shadow(0px 1px 8px #00000012);
+  
+  }
+  
+  .page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: auto;
+  }
+  .nav{
+    
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  .nav__logo {
+    color: $accent-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    padding-left: 15px;
+  }
+  .nav__menu {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+  }
+  .nav__page{
+    color: $primary-black-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+  
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: capitalize;
+  
+  }
+  
+  .contacts-menu{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+  }
+  .contacts__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+  
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    height: 20px;
+  }
+  .contacts__icon.email {
+    fill: $primary-text-color;
+    width: 20px;
+    height: 12px;
+  }
+  .contacts__icon.smartphone {
+    fill: $primary-text-color;
+    width: 10px;
+    height: 17px;
+  }
+  .nav__logo {
+    color: $accent-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  .nav__page:hover,
+  .nav__page:focus,
+  .nav__page--current,
+  .contacts__item:hover,
+  .contacts__item:focus,
+  .contacts__item:hover .list,
+  .contacts__icon:hover,
+  .contacts__icon:focus,
+  .contacts__icon:hover .list{
+    color: $accent-color;
+    fill: #03a9f4;
+    
+    transition-timing-function: $transition-timing-function;
+    transition: ease 150ms;
+  }
+  .nav__page:hover,
+  .nav__page:focus,
+  .nav__page--current{
+    border-bottom: #2196F3 solid 3px;
+    padding: 29px 0;
+    transition-timing-function: $transition-timing-function;
+    transition: ease 150ms;
+  
+  }
+  

@@ -1,0 +1,49 @@
+h4{
+    position: absolute;
+      width: 100%;
+      justify-content: center;
+    font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      top: 30px;
+      
+      color: #212121;
+  }
+  
+  h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+  
+    color: $primary-black-color;
+  }
+  
+  h5{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+  
+    color: $primary-white-color;
+  }
+  h6{
+    justify-content: center;
+      
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 35px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      
+      color: $primary-white-color;
+  }

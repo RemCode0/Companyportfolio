@@ -1,0 +1,39 @@
+
+.icon-{
+    fill: $gray-1;
+  }
+  .social-icon-{
+    fill: $gray-2;
+  }
+  .social-icon2{
+    fill: $primary-white-color;
+    filter: drop-shadow(1px 1px 5px #00000085);
+  
+  }
+  .social-icons-:hover .social-icon-{
+    fill: $gray-1;
+    transition-timing-function: $transition-timing-function;
+    transition: $transition;
+  }
+  .social-icons-:hover .svg-circle{
+    opacity: 1;
+    transition-timing-function: $transition-timing-function;
+    transition: $transition;
+  }
+  .social-icons-:hover .svg-circle2{
+    fill: $accent-color;
+    transition-timing-function: $transition-timing-function;
+    transition: $transition;
+  }
+  .svg-circle{
+    fill: $accent-color;
+    opacity: 0;
+  }
+  .svg-circle2{
+    fill: $background-black-2;
+    filter: drop-shadow(0px 3px 3px #00000033);
+  
+  }
+  .coloricon{
+    fill: #ffffff;
+  }

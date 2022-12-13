@@ -1,0 +1,43 @@
+.button-primary {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    font-size: 16px;
+    font-weight: 700;
+  
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: capitalize;
+    padding: 15px 25px;
+  
+    cursor: pointer;
+    transition-timing-function: $transition-timing-function;
+    transition: $transition;
+
+    &:hover {
+      background-color: $accent-color-hover;
+      transition-timing-function: $transition-timing-function;
+      transition: $transition;
+    }
+  }
+  .button-secondary {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    font-size: 16px;
+    font-weight: 700;
+  
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: capitalize;
+  
+    cursor: pointer;
+    transition-timing-function: $transition-timing-function;
+    transition: $transition;
+    
+    &:hover {
+      background-color: $accent-color-hover;
+      transition-timing-function: $transition-timing-function;
+      transition: $transition;
+    }
+  }

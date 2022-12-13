@@ -1,0 +1,230 @@
+.modal__backdrop{
+    position: fixed;
+    display: flex;
+    backdrop-filter: brightness(0.7);
+    height: 100vh;
+    width: 100%;
+    z-index: 8;
+  
+    animation: modal 500ms 150ms;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0;    
+  
+  }
+  /* Formulario  */
+  .modal__labelbtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 250ms ease;
+    stroke: none;
+    cursor: pointer;
+    &:hover .label__btn {
+      fill: $accent-color;
+      transition: all 150ms ease;
+      transition-timing-function: $transition-timing-function;
+    }
+  }
+  .label__btn{
+    fill: $black-1;
+  }
+  #cerrar{
+    display: none;
+    
+    & + label{
+      font-size: 30px;
+      z-index: 50;
+      margin: auto;
+      height: 40px;
+      width: 30px;
+      line-height: 30px;
+      
+      animation: modal 150ms 1ms  forwards;
+      visibility:hidden;
+      opacity: 0;
+      overflow-y: hidden;
+    }
+  }
+  #cerrar:checked + label, 
+  #cerrar:checked ~ .modal__backdrop {
+    display: none;
+    transition: all 150ms ease;
+    transition-timing-function: $transition-timing-function;
+  }
+  @keyframes modal{
+    100%{ 
+        visibility: visible;
+        opacity: 1;
+    }
+  }
+  /* Contenido modal  */
+  
+  .data-modal{
+    position: fixed;
+    display: flex;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 528px;
+    height: 600px;
+  
+  
+    background-color: $primary-white-color;
+    z-index: 5;
+  
+  
+  }
+  .modal{
+    position: absolute;
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    margin-top: 80px;
+    justify-content: center;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    letter-spacing: 0.01em;
+    
+    color: $black-1;
+  }
+  .modal__label{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    left: 0;
+    margin: 0;
+    
+    &:hover .modal__icon{
+      fill: $accent-color-hover;
+      transition: all 150ms ease;
+      transition-timing-function: $transition-timing-function;
+    }
+    &:focus-within .modal__icon{
+      fill: $accent-color;
+      transition: all 150ms ease;
+      transition-timing-function: $transition-timing-function;
+    
+    }
+  
+  }
+  .modal__input{
+    width: 448px;
+    height: 40px;
+    background-color: $primary-white-color;
+    border-radius: 5px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 0 30px;
+  
+    &:hover{
+      border-color: $accent-color-hover;
+      transition: all 150ms ease;
+      transition-timing-function: $transition-timing-function;
+    }
+  }
+  .modal__textarea{
+    background-color: $primary-white-color;
+    border-radius: 5px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
+    padding: 10px;
+    color: $black-1;
+  }
+  .modal__button{
+    position: relative;
+    width: 200px;
+    top: 5px;
+    margin: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,0%);
+    border-radius: 4px;
+    justify-content: center;
+  }
+  
+  .modal__icon{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  
+    transform: translate(60%,285%);
+    fill: $black-1;
+  }
+  
+  /* TERMINOS Y CONDICIONES */
+  
+  .terms input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .terms{
+    padding-top: 10px;
+    padding-left: 40px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+  
+    cursor: pointer;
+
+    &:hover{
+      color: $accent-color-hover;
+      transition: 150ms ease;
+      transition-timing-function: $transition-timing-function;
+    }
+    &:hover #form2{
+      border:$accent-color-hover solid 1px ;
+      transition: 150ms ease;
+      transition-timing-function: $transition-timing-function;
+    
+    }
+  }
+  /* Icono Checked terminos y condiciones */
+  
+  #form{
+    position: absolute;
+    width: 15px;
+    bottom: 75px;
+    left: 50px;
+    cursor: pointer;
+    opacity: 0;
+    
+    &:checked ~ #form2{
+      fill: $accent-color;
+      stroke: $primary-white-color;
+      border: 0px ;
+      transition: 150ms ease;
+    }
+  }
+  /* Icono svg checked */
+  #form2{
+    position: absolute;
+    width: 15px;
+    bottom: 88px;
+    left: 50px;
+    fill: $primary-white-color;
+    border: #9c9c9c solid 1px ;
+    cursor: pointer;
+    transition: 150ms ease;  
+  }
+
+  
