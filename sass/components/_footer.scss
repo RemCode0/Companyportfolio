@@ -1,97 +1,298 @@
-@media screen and (min-width: 768px) {
-      footer {
-        padding: 40px $container-padding;
-        background-color: $background-black-2;
-    }
-    .foot__address{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      gap: 20px;
-        width: auto;
-    }
-    .foot__logo  {
-        color: $accent-color;
-        font-family: "Raleway", sans-serif;
-        font-size: 30px;
-        font-weight: 700;
-        text-decoration: none;
-        color: $accent-color-hover;
-      }
-      
-    .foot__list{
-        list-style: none;
-    }
-    .foot__contact {
-        display: block;
-        color: $gray-2;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 2;
-        text-decoration: none;
-        padding: 1px 0;
-        width: 200px;
-        text-align: center;        
-        &:hover {
-            color: $primary-white-color;
-            transition-timing-function: $transition-timing-function;
-            transition: $transition;
-        }
-    }
-    .foot__contact{
-      align-items: center;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        
-    }
-    .foot__find{
-      width: auto;
-      align-items: center;
-      justify-content: center;
-    }
-    .foot__form{
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 36px;
-    }
-
-    .formulary__label{
-      color: $primary-white-color;
-      font-weight: 700;
-    }
-
-    .formulary__input{
-      width: 350px;
-      height: 50px;
-      padding-left: 15px;
-
-      border-radius: 4px;
-      background-color: $primary-white-10Perc;
-      color: $primary-white-color;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    .formulary__button{
-      font-size: 16px;
-      line-height: 30px;
-
-      text-align: center;
-      letter-spacing: 0.06em;
-      padding: 10px 30px;
-      margin-left: 10px;
-      border: 0;
-    }
-
-    .send_ico{
-      transform: translate(0%,30%);  
-      fill: $primary-white-color;
-    }
-
+footer {
+  padding: 40px $container-padding;
+  background-color: $background-black-2;
+}
+footer .foot__container {
+display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 90px;
+}
+.foot__address{
+  text-align: center;
+  width: auto;
+}
+.foot__logo  {
+  color: $accent-color;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $accent-color-hover;
 }
 
+.foot__list{
+  list-style: none;
+  width: 200px;
+}
+.foot__contact {
+  display: block;
+  color: $gray-2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  text-decoration: none;
+  padding: 1px 0;
+  width: auto;
+  &:hover {
+      color: $primary-white-color;
+      transition-timing-function: $transition-timing-function;
+      transition: $transition;
+  }
+}
+.foot__contact{
+  list-style: none;
+  
+}
+.foot__find{
+text-align: center;
+  width: auto;
+}
+.foot__form{
+width: 450px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 50px;
+text-align: center;
+}
+
+.formulary__label{
+color: $primary-white-color;
+font-weight: 700;
+}
+
+.formulary__input{
+min-width: auto;
+height: 50px;
+align-items: center;
+padding-left: 15px;
+border-radius: 4px;
+background-color: $primary-white-10Perc;
+color: $primary-white-color;
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.formulary__button{
+font-size: 16px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.06em;
+padding: 10px 30px;
+margin: 15px;
+border: 0;
+}
+
+.send_ico{
+transform: translate(0%,30%);  
+fill: $primary-white-color;
+}
+@media screen and (min-width: 480px) {
+  footer {
+    padding: 40px $container-padding;
+    background-color: $background-black-2;
+}
+footer .foot__container {
+  display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      gap: 90px;
+}
+.foot__address{
+    text-align: center;
+    width: auto;
+}
+.foot__logo  {
+    color: $accent-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $accent-color-hover;
+  }
+  
+.foot__list{
+    list-style: none;
+    width: 200px;
+}
+.foot__contact {
+    display: block;
+    color: $gray-2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    text-decoration: none;
+    padding: 1px 0;
+    width: auto;
+    &:hover {
+        color: $primary-white-color;
+        transition-timing-function: $transition-timing-function;
+        transition: $transition;
+    }
+}
+.foot__contact{
+    list-style: none;
+    
+}
+.foot__find{
+  text-align: center;
+    width: auto;
+}
+.foot__form{
+  width: 450px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.formulary__label{
+  color: $primary-white-color;
+  font-weight: 700;
+}
+
+.formulary__input{
+  width: 450px;
+  height: 50px;
+  align-items: center;
+  padding-left: 15px;
+  border-radius: 4px;
+  background-color: $primary-white-10Perc;
+  color: $primary-white-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.formulary__button{
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 30px;
+  margin: 15px;
+  border: 0;
+}
+
+.send_ico{
+  transform: translate(0%,30%);  
+  fill: $primary-white-color;
+}
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 40px $container-padding;
+    background-color: $background-black-2;
+}
+footer .foot__container {
+  display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      gap: 150px;
+}
+.foot__address{
+  justify-items: center;
+  
+    width: auto;
+}
+.foot__logo  {
+    justify-items: center;
+    color: $accent-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $accent-color-hover;
+  }
+  
+.foot__list{
+  justify-items: center;
+  
+    list-style: none;
+    width: 200px;
+}
+.foot__contact {
+    display: block;
+    color: $gray-2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    text-decoration: none;
+    padding: 1px 0;
+    width: auto;
+    
+    &:hover {
+        color: $primary-white-color;
+        transition-timing-function: $transition-timing-function;
+        transition: $transition;
+    }
+}
+.foot__contact{
+  justify-items: center;
+  
+    align-items: center;
+    list-style: none;
+    
+}
+.foot__find{
+  transform: translate(0,-30%);
+
+  text-align: center;
+  width: auto;
+
+}
+.foot__form{
+  transform: translate(0,-50%);
+
+  width: 450px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.formulary__label{
+  color: $primary-white-color;
+  font-weight: 700;
+}
+
+.formulary__input{
+  width: 450px;
+  height: 50px;
+  align-items: center;
+  padding-left: 15px;
+  border-radius: 4px;
+  background-color: $primary-white-10Perc;
+  color: $primary-white-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.formulary__button{
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 30px;
+  margin-left: 10px;
+  border: 0;
+}
+
+.send_ico{
+  transform: translate(0%,30%);  
+  fill: $primary-white-color;
+}
+}
 @media screen and (min-width: 1200px) {
   
     footer {
@@ -100,14 +301,19 @@
     }
     footer .foot__container {
       display: flex;
+      justify-items: center;
       justify-content: center;
-      gap: 80px;
+      align-items: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      gap: 50px;
     }
     .foot__address{
-        width: auto;
+      transform: translate(0,10%);
+        width: 255px;
+        text-align: left;
     }
     .foot__logo  {
-        justify-items: flex-start;
         color: $accent-color;
         font-family: "Raleway", sans-serif;
         font-size: 30px;
@@ -117,12 +323,13 @@
       }
       
     .foot__list{
-        list-style: none;
-        width: 200px;
+      
+      list-style: none;
+      width: 200px;
     }
     .foot__contact {
-        display: block;
-        color: $gray-2;
+      display: block;
+      color: $gray-2;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -134,24 +341,27 @@
             color: $primary-white-color;
             transition-timing-function: $transition-timing-function;
             transition: $transition;
+          }
         }
-    }
-    .foot__contact{
-      
-        align-items: center;
+        .foot__contact{
+      text-align: left;
+        align-items: left;
         list-style: none;
-        
     }
     .foot__find{
-        width: auto;
-    }
+      transform: translate(0,-20%);
+        width: 215px;
+        text-align: left;
+      }
     .foot__form{
-      width: auto;
+      transform: translate(0,0%);
+      text-align: left;
+      width: 555px;
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
-      line-height: 36px;
+      line-height: 2px;
     }
     
     .formulary__label{

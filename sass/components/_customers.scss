@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  gap: 50px;
+  gap: 80px;
   
 }
   .customers__list {
@@ -35,4 +35,23 @@
     transition-timing-function: $transition-timing-function;
     transition: $transition;
   }
-  
+  @media screen and (min-width:785px) {
+    .customers{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 80px;
+      margin: 20px;
+    }
+  }
+  @media screen and (min-width:1200px) {
+    .customers{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 30px;
+      
+  }
+}
