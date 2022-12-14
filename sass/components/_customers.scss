@@ -1,11 +1,11 @@
 .customers{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    list-style: none;
-    transition-timing-function: $transition-timing-function;
-    transition: $transition;
+  transition-timing-function: $transition-timing-function;
+  transition: $transition;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  list-style: none;
   }
   .customers__list {
     display: flex;
