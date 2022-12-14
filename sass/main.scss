@@ -28,13 +28,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-.logo{
-  color: $accent-color;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  text-decoration: none;
-}
+
 a {
   text-decoration: none;
 }
@@ -42,34 +36,54 @@ section {
   padding: 94px 0;
 }
 .container {
-  flex-direction: column;
+  
   padding: 0 15px;
   max-width: calc(480px - 500px);
-  // min-width: 768px;
   margin: 0 auto;
 }
 .page-container {
   max-width: calc(480px - 500px);
-  // min-width: 480px;
   padding: 0 15px;
   margin: 0 auto;
 }
 .no-top-pading {
   padding-top: 0;
 }
+@media screen and (min-width: 100px) {
+  *{
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+  }
+  
+}
+@media screen and (min-width: 480px) {
+  *{
+    overflow: visible;
+  }
+}
 @media screen and (min-width: 768px) {
+  *{
+    -webkit-overflow-scrolling: touch;
+    overflow: visible;
+
+  }
   section {
     padding: 94px 0;
   }
   .container {
-    flex-direction: column;
     padding: 0 15px;
-    min-width: calc(768px - 500px);
+    min-width: calc(768px - 50px);
     // min-width: 768px;
     margin: 0 auto;
   }
-  .page-container {
-    min-width: calc(768px - 500px);
+  .header__container {
+    min-width: calc(768px - 50px);
+    // min-width: 768px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .foot__container {
+    min-width: calc(768px - 50px);
     // min-width: 768px;
     padding: 0 15px;
     margin: 0 auto;
@@ -79,18 +93,25 @@ section {
   }
 }
 @media screen and (min-width: 1200px) {
+  *{
+    overflow: visible;
+  }
   
     section {
       padding: 94px 0;
     }
     .container {
-      flex-direction: column;
       padding: 0 15px;
-      width: calc(1200px - 30px);
+      width: calc(1200px - 50px);
       margin: 0 auto;
     }
-    .page-container {
-      width: calc(1200px - 30px);
+    .header__container {
+      min-width: calc(1200px - 50px);
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    .foot__container {
+      min-width: calc(1200px - 50px);
       padding: 0 15px;
       margin: 0 auto;
     }

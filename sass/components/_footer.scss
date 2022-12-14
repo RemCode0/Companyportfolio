@@ -1,139 +1,57 @@
 @media screen and (min-width: 768px) {
-    footer {
-      padding: 50px $container-padding;
-      background-color: $background-black-2;
-      
-      .logo {
-          justify-items: flex-start;
-          padding-left: 15px;
-          color: $accent-color-hover;
-        }
-     }
-  .foot{
-
-  }   
-  .page-container address ul {
-      list-style: none;
-  }
-  .contact {
-      display: block;
-      color: $gray-2;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
-      text-decoration: none;
-      padding: 1px 0;
-      width: 250px;
-      
-      &:hover {
-          color: $primary-white-color;
-          transition-timing-function: $transition-timing-function;
-          transition: $transition;
-      }
-  }
-  .page-container aside a {
-      display: inline-flex;
-      align-items: center;
-      list-style: none;
-      
-  }
-  .find{
-      transform: translate(0%,-30%) ;  
-      width: 325px;
-  }
-  .foot__form{
-    transform: translate(0%,-30%);  
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-  }
-
-  .formulary__label{
-    color: $primary-white-color;
-    font-weight: 700;
-  }
-
-  .formulary__input{
-    width: 351px;
-    height: 50px;
-    align-items: center;
-    padding-left: 15px;
-
-    border-radius: 4px;
-    background-color: $primary-white-10Perc;
-    color: $primary-white-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .formulary__button{
-    font-size: 16px;
-    line-height: 30px;
-
-    text-align: left;
-    letter-spacing: 0.06em;
-    padding: 10px 30px;
-    margin-left: 10px;
-    border: 0;
-  }
-
-  .send_ico{
-    transform: translate(0%,30%);  
-    fill: $primary-white-color;
-  }
-
-}
-
-@media screen and (min-width: 1200px) {
       footer {
-        padding: 50px $container-padding;
+        padding: 40px $container-padding;
         background-color: $background-black-2;
-        
-        .logo {
-            justify-items: flex-start;
-            padding-left: 30px;
-            color: $accent-color-hover;
-          }
-        .page-container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            gap: 25px;
-        }
+    }
+    .foot__address{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 20px;
+        width: auto;
+    }
+    .foot__logo  {
+        color: $accent-color;
+        font-family: "Raleway", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-decoration: none;
+        color: $accent-color-hover;
       }
-    .page-container address ul {
+      
+    .foot__list{
         list-style: none;
     }
-    .contact {
+    .foot__contact {
         display: block;
         color: $gray-2;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 1.71;
+        line-height: 2;
         text-decoration: none;
         padding: 1px 0;
-        width: 250px;
-        
+        width: 200px;
+        text-align: center;        
         &:hover {
             color: $primary-white-color;
             transition-timing-function: $transition-timing-function;
             transition: $transition;
         }
     }
-    .page-container aside a {
-        display: inline-flex;
+    .foot__contact{
+      align-items: center;
+        justify-content: center;
         align-items: center;
         list-style: none;
         
     }
-    .find{
-        transform: translate(0%,-35%) ;  
-        width: 300px;
+    .foot__find{
+      width: auto;
+      align-items: center;
+      justify-content: center;
     }
     .foot__form{
-      transform: translate(0%,-35%);  
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 700;
@@ -141,6 +59,101 @@
       line-height: 36px;
     }
 
+    .formulary__label{
+      color: $primary-white-color;
+      font-weight: 700;
+    }
+
+    .formulary__input{
+      width: 350px;
+      height: 50px;
+      padding-left: 15px;
+
+      border-radius: 4px;
+      background-color: $primary-white-10Perc;
+      color: $primary-white-color;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .formulary__button{
+      font-size: 16px;
+      line-height: 30px;
+
+      text-align: center;
+      letter-spacing: 0.06em;
+      padding: 10px 30px;
+      margin-left: 10px;
+      border: 0;
+    }
+
+    .send_ico{
+      transform: translate(0%,30%);  
+      fill: $primary-white-color;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+  
+    footer {
+        padding: 40px $container-padding;
+        background-color: $background-black-2;
+    }
+    footer .foot__container {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+    }
+    .foot__address{
+        width: auto;
+    }
+    .foot__logo  {
+        justify-items: flex-start;
+        color: $accent-color;
+        font-family: "Raleway", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-decoration: none;
+        color: $accent-color-hover;
+      }
+      
+    .foot__list{
+        list-style: none;
+        width: 200px;
+    }
+    .foot__contact {
+        display: block;
+        color: $gray-2;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2;
+        text-decoration: none;
+        padding: 1px 0;
+        width: auto;
+        &:hover {
+            color: $primary-white-color;
+            transition-timing-function: $transition-timing-function;
+            transition: $transition;
+        }
+    }
+    .foot__contact{
+      
+        align-items: center;
+        list-style: none;
+        
+    }
+    .foot__find{
+        width: auto;
+    }
+    .foot__form{
+      width: auto;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 36px;
+    }
+    
     .formulary__label{
       color: $primary-white-color;
       font-weight: 700;

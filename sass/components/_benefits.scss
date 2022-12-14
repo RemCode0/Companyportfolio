@@ -1,8 +1,78 @@
 .benefits__list {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
+
+    li {
+      list-style: none;
+      width: 270px;
+      padding: 10px;
+    }
+  }
+  .benefits__div{
     display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: $gray-1;
+    border-radius: 10px;
+    height: 120px;
+    margin-bottom: 15px;
+    width: 26 0px;
+  }
+  .benefits__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .benefits__title{
+    
+    height: 50px;
+    text-transform: uppercase;
+    color: $primary-black-color;
+  }
+
+@media screen and (min-width:480px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  
+      li {
+        list-style: none;
+        width: 270px;
+        padding: 10px;
+      }
+    }
+    .benefits__div{
+      text-align: center;
+      display: flex;
+    
+      background-color: $gray-1;
+      border-radius: 10px;
+      height: 120px;
+      margin-bottom: 15px;
+      width: 26 0px;
+    }
+    .benefits__icon {
+      width: 70px;
+      height: 70px;
+    }
+    .benefits__title{
+      text-align: center;
+      height: 50px;
+      text-transform: uppercase;
+      color: $primary-black-color;
+    }
+}
+@media screen and (min-width:760px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
 
     li {
       list-style: none;
@@ -30,3 +100,38 @@
     text-transform: uppercase;
     color: $primary-black-color;
   }
+}
+@media screen and (min-width:1200px) {
+  .benefits__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+    li {
+      list-style: none;
+      width: 270px;
+      padding: 10px;
+    }
+  }
+  .benefits__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: $gray-1;
+    border-radius: 10px;
+    height: 120px;
+    margin-bottom: 15px;
+    width: 26 0px;
+  }
+  .benefits__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .benefits__title{
+    text-align: left;
+    height: 50px;
+    text-transform: uppercase;
+    color: $primary-black-color;
+  }
+}

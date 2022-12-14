@@ -1,5 +1,7 @@
 .service {
     background: url("../images/img_hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
     background-blend-mode: overlay;
     padding: 200px $container-padding;
     position: relative;
@@ -17,10 +19,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    width: 700px;
-    margin: 20px auto;
     color: $primary-white-color;
-    font-size: 44px;
+    font-size: 30px;
     position: relative;
     z-index: 5;
 }
@@ -36,4 +36,55 @@
     background-color: $background-black-240Perc;
     height: 100%;
     width: 100%;
+}
+@media screen and (min-width:480px) {
+    .service {
+        background: url("../images/img_hero.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-blend-mode: overlay;
+        padding: 200px $container-padding;
+        position: relative;
+        text-align: center;
+        filter: drop-shadow(0px 5px 8px #0000002a);
+      
+      }
+    .service__title {
+        color: $primary-white-color;
+        font-size: 44px;
+        position: relative;
+        z-index: 5;
+    }
+    .service__button{
+        position: relative;
+        z-index: 5;
+    }
+    .service__overlay {
+        position: absolute;
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px)  {
+    .service {
+        background: url("../images/img_hero.jpg");
+        background-blend-mode: overlay;
+        padding: 200px $container-padding;
+        position: relative;
+        text-align: center;
+        filter: drop-shadow(0px 5px 8px #0000002a);
+      
+      }
+    .service__title {
+        font-size: 44px;
+        position: relative;
+        z-index: 5;
+    }
+    .service__button{
+        position: relative;
+        z-index: 5;
+    }
+    .service__overlay {
+        position: absolute;
+        width: 100%;
+    }
 }

@@ -1,48 +1,176 @@
 
 .team-section{
-    background-color: $gray-1;
-    .team-cards{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: flex-end;
-    }
+  background-color: $gray-1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 50px;
+
+}
+.team-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+
 }
 .cards__list2{
+  border-radius: 8px;
+  background-color: $primary-white-color;
+  text-align: center;
+  list-style: none;
+  .cards__images{
     border-radius: 8px;
-    background-color: $primary-white-color;
-    text-align: center;
-    list-style: none;
-    .cards__images{
-      border-radius: 8px;
+
+  }
+}
+.cards__list2:hover {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    transition-timing-function: $transition-timing-function;
+    transition: all 250ms; 
+}
+.cards__title{
+  margin: 10px 0 0px 0;
+}
+.cards__paragraph{
+  margin-bottom: 10px;
+}
+.cards__icon-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.icon__list {
+  display: block;
+  width: 40px;
+  height: 35px;
+  border-radius: 25px;
+
+}
+  @media screen and (min-width:480px) {
+    .team-section{
+      background-color: $gray-1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      gap: 50px;
 
     }
-  }
-  .cards__list2:hover {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-      transition-timing-function: $transition-timing-function;
-      transition: all 250ms; 
-  }
-  .cards__title{
-    margin: 10px 0 0px 0;
-  }
-  .cards__paragraph{
-    margin-bottom: 10px;
-  }
-  .cards__icon-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-  
-    padding: 10px 20px;
-    margin-bottom: 20px;
-  }
-  .icon__list {
-    display: block;
-    width: 40px;
-    height: 35px;
-    border-radius: 25px;
+    .team-cards{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
     
+    }
+  .cards__list2{
+      border-radius: 8px;
+      background-color: $primary-white-color;
+      text-align: center;
+      list-style: none;
+      .cards__images{
+        border-radius: 8px;
+  
+      }
+    }
+    .cards__list2:hover {
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+        transition-timing-function: $transition-timing-function;
+        transition: all 250ms; 
+    }
+    .cards__title{
+      margin: 10px 0 0px 0;
+    }
+    .cards__paragraph{
+      margin-bottom: 10px;
+    }
+    .cards__icon-list{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+    .icon__list {
+      display: block;
+      width: 40px;
+      height: 35px;
+      border-radius: 25px;
+  
+    }
   }
- 
+  @media screen and (min-width:760px) {
+    .team-cards{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+    
+    }
+  }
+  @media screen and (min-width:1200px) {
+    .team-section{
+      background-color: $gray-1;
+      display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: 50px;
+      .team-cards{
+          display: flex;
+          justify-content: space-around;
+          gap: 13px;
+      }
+  }
+  .cards__list2{
+      border-radius: 8px;
+      background-color: $primary-white-color;
+      text-align: center;
+      list-style: none;
+      .cards__images{
+        border-radius: 8px;
+  
+      }
+    }
+    .cards__list2:hover {
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+        transition-timing-function: $transition-timing-function;
+        transition: all 250ms; 
+    }
+    .cards__title{
+      margin: 10px 0 0px 0;
+    }
+    .cards__paragraph{
+      margin-bottom: 10px;
+    }
+    .cards__icon-list{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+    .icon__list {
+      display: block;
+      width: 40px;
+      height: 35px;
+      border-radius: 25px;
+  
+    }
+  }

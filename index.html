@@ -19,41 +19,62 @@
 <body>
   <!-- Header section -->
   <header class="page-header">
-    <div class="page-container">
-      <nav class="nav">
-        <a class="nav__logo" href="./index.html">WebStudio</a>
-        <ul class="nav__menu">
-          <li><a class="nav__page nav__page--current" href="./index.html">Estudio</a></li>
-          <li><a class="nav__page" href="./portfolio.html">Portafolio</a></li>
-          <li><a class="nav__page" href="">Contacto</a></li>
+    <div class="header__container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      <div class="menu">
+        <nav class="nav">
+            <a class="nav__logo" href="./index.html">WebStudio</a>
+          <ul class="nav__menu">
+            <li><a class="nav__page nav__page--current" href="./index.html">Estudio</a></li>
+            <li><a class="nav__page" href="./portfolio.html">Portafolio</a></li>
+            <li><a class="nav__page" href="">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- contacts  -->
+        <ul class="contacts-menu list">
+          <li>
+            <a class="contacts__item" href="#">
+              <svg class="contacts__icon email">
+                <use href="./images/SVG/sprite-sheet.svg#email"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+  
+          <li>
+            <a class="contacts__item" href="#">
+              <svg class="contacts__icon smartphone">
+                <use href="./images/SVG/sprite-sheet.svg#smartphone"></use>
+              </svg>
+              +52 55 5529 6000
+            </a>
+          </li>
         </ul>
-      </nav>
-      <!-- contacts  -->
-      <ul class="contacts-menu list">
-        <li>
-          <a class="contacts__item" href="#">
-            <svg class="contacts__icon email">
-              <use href="./images/SVG/sprite-sheet.svg#email"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
+      </div>
 
-        <li>
-          <a class="contacts__item" href="#">
-            <svg class="contacts__icon smartphone">
-              <use href="./images/SVG/sprite-sheet.svg#smartphone"></use>
-            </svg>
-            +52 55 5529 6000
-          </a>
-        </li>
-      </ul>
     </div>
   </header>
 
 
   <!-- Modal Formulario de suscripcion -->
-  <div class="page-modal">
+  <!-- <div class="page-modal">
   <input type="checkbox" id="cerrar">
         <div class="modal__backdrop">
         <div class="data-modal">
@@ -88,7 +109,7 @@
             </form>
         </div>
         </div>      
-  </div>
+  </div> -->
   <!-- main content section  -->
 
   <main>
@@ -403,24 +424,24 @@
     </section>
   </main>
 
-  <footer>
-    <a class="logo" href="">WebStudio</a>
-    <div class="page-container">
-      <address>
-        <ul>
+  <footer class="foot">
+    <div class="foot__container">
+      <address class="foot__address">
+        <a class="foot__logo" href="">WebStudio</a>
+        <ul class="foot__list">
           <li>
-            <a class="contact" href="#" target="_blank" rel="noopener noreferrer">Calz. Ticomán 500, Ciudad de <br>México, CDMX, México</a>
+            <a class="foot__contact" href="#" target="_blank" rel="noopener noreferrer">Calz. Ticomán 500, Ciudad de México, CDMX, México</a>
           </li>
           <li>
-            <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="foot__contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a class="contact" href="tel:380961111111">+52 55 5529 6000</a>
+            <a class="foot__contact" href="tel:380961111111">+52 55 5529 6000</a>
           </li>
         </ul>
       </address>
       <aside>
-        <div class="find">
+        <div class="foot__find">
           <h5>Encuentrenos en</h5>
           <a href="https://www.instagram.com" >
             <svg class="social-icons-"width="50" height="50" fill="none">
@@ -448,10 +469,10 @@
           </a>
         </div>
       </aside>
-      <div class="form_foot">
+      <div class="foot__form">
         <form class="formulary">
           <label class="formulary__label">
-            Suscríbase al Boletin Informativo
+            Suscríbase al Boletin Informativo<br>
             <input class="formulary__input" type="email" name="email" placeholder="Correo Electronico"/>
           </label>
           <button class="formulary__button button-secondary" type="submit">Suscribase <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" class="send_ico"><path fill="" class="color_icon2" d="M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z"/></svg></button>

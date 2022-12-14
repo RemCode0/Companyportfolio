@@ -1,17 +1,19 @@
 .customers{
   transition-timing-function: $transition-timing-function;
   transition: $transition;
+  padding: $container-padding;
+  
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  list-style: none;
-  }
+  justify-content: space-evenly;
+  gap: 50px;
+  
+}
   .customers__list {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     border: solid 1px $gray-2;
     border-radius: 5px;
     cursor: pointer;
