@@ -1,9 +1,9 @@
 .service {
-    background: url("../images/img_hero.jpg");
+    background: url("../images/img_hero-vertical_2x.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-blend-mode: overlay;
-    padding: 200px $container-padding;
+    padding: 100px $container-padding;
     position: relative;
     text-align: center;
     filter: drop-shadow(0px 5px 8px #0000002a);
@@ -13,14 +13,14 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    line-height: 60px;
+    line-height: 40px;
     
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: $primary-white-color;
-    font-size: 30px;
+    font-size: 24px;
     position: relative;
     z-index: 5;
 }
@@ -39,9 +39,10 @@
 }
 @media screen and (min-width:480px) {
     .service {
-        background: url("../images/img_hero.jpg");
+        background: url("../images/img_hero-horizontal_2x.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        background-position: center;
         background-blend-mode: overlay;
         padding: 200px $container-padding;
         position: relative;
@@ -51,7 +52,9 @@
       }
     .service__title {
         color: $primary-white-color;
-        font-size: 44px;
+        font-size: 35px;
+        line-height: 50px;
+
         position: relative;
         z-index: 5;
     }
@@ -68,6 +71,8 @@
     .service {
         background: url("../images/img_hero.jpg");
         background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
         padding: 200px $container-padding;
         position: relative;
         text-align: center;
@@ -76,6 +81,8 @@
       }
     .service__title {
         font-size: 44px;
+        line-height: 60px;
+
         position: relative;
         z-index: 5;
     }
