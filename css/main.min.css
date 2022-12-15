@@ -70,7 +70,7 @@ header {
 .header__container {
   display: flex;
   justify-content: space-between;
-  margin: auto 50px;
+  margin: auto 20px;
 }
 .header__container .nav,
 .header__container .nav__logo,
@@ -170,7 +170,7 @@ header {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .menu-container {
@@ -180,7 +180,7 @@ header {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: #ffffff;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -194,28 +194,82 @@ header {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: #212121;
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0.02em;
 }
 
-.mobile-menu .link {
+.links__info {
+  display: flex;
+  position: absolute;
+  bottom: 150px;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+}
+.links__info .links {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: #212121;
   text-decoration: none;
+}
+.links__info .links:active {
+  color: #188ce8;
+  transition: all ease 150ms;
+}
+
+.links__social {
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+}
+.links__social li {
+  border-right: 1px solid #afb1b8;
+}
+.links__social .links--active {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2196f3;
+  padding: 10px;
+}
+
+.link {
+  display: block;
+  padding: 10px;
+  color: #212121;
+  text-decoration: none;
+}
+.link:active {
+  color: #188ce8;
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    height: 80px;
+  }
   .header__container {
     display: flex;
     justify-content: space-between;
     gap: 0;
     height: 100%;
+  }
+  .header__container .logo {
+    display: none;
   }
   .header__container .nav,
   .header__container .nav__logo,
@@ -266,9 +320,10 @@ header {
     flex-wrap: wrap;
     justify-content: right;
     list-style: none;
-    row-gap: 1px;
-    column-gap: 70px;
+    row-gap: 10px;
+    column-gap: 80px;
     align-items: center;
+    align-content: center;
   }
   .header__container .contacts__item {
     display: flex;
@@ -918,14 +973,13 @@ footer .foot__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border: 1px dashed black;
   gap: 50px;
 }
 .benefits__list li {
   list-style: none;
   height: 260px;
   width: 270px;
-  border: 1px dashed black;
+  text-align: center;
 }
 
 .benefits__div {
@@ -949,6 +1003,9 @@ footer .foot__container {
 
 .benefits__title {
   display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   height: 50px;
   text-transform: uppercase;
   color: #212121;
@@ -960,7 +1017,6 @@ footer .foot__container {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: px;
   }
   .benefits__div {
     text-align: center;
@@ -991,7 +1047,7 @@ footer .foot__container {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 40px;
   }
   .benefits__list li {
     list-style: none;
@@ -1023,6 +1079,11 @@ footer .foot__container {
   li {
     list-style: none;
   }
+  .benefits__description {
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+  }
   .benefits__div {
     display: flex;
     border-radius: 10px;
@@ -1033,6 +1094,8 @@ footer .foot__container {
     height: 70px;
   }
   .benefits__title {
+    align-items: left;
+    justify-content: left;
     text-align: left;
     height: 50px;
     text-transform: uppercase;
