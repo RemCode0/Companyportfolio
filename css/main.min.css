@@ -7,7 +7,7 @@ h4 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1514,14 +1514,16 @@ footer .foot__container {
 }
 .portfolio .menu {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  margin: 50px;
+  align-items: center;
+  gap: 20px;
+  margin: 0px 0px 50px;
   list-style: none;
 }
 
 .menu__button {
+  display: flex;
   list-style: none;
   border: none;
   outline: none;
@@ -1550,16 +1552,16 @@ footer .foot__container {
 }
 
 .cards {
-  list-style: none;
-  justify-content: space-between;
-  flex-wrap: wrap;
   display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .cards__list {
   position: relative;
   margin-bottom: 80px;
-  width: 365px;
+  width: 350px;
   border: solid 1px #f5f4fa;
   padding-bottom: 80px;
   border-radius: 10px;
@@ -1577,11 +1579,15 @@ footer .foot__container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: all ease 250ms;
 }
+.cards__list .cards__info {
+  width: 350px;
+}
 
 .cards__title {
   color: #212121;
   padding: 15px;
   z-index: 5;
+  font-size: 20px;
 }
 
 .cards__text {
@@ -1628,6 +1634,25 @@ footer .foot__container {
   z-index: 1;
 }
 
+@media screen and (min-width: 780px) {
+  .portfolio .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  }
+  .portfolio {
+    margin: 20px;
+  }
+  .cards {
+    justify-content: space-between;
+  }
+  .cards .cards__list {
+    width: 365px;
+  }
+}
 .button-primary {
   background-color: #2196f3;
   color: #ffffff;

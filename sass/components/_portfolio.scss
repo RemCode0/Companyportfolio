@@ -1,12 +1,14 @@
 .portfolio .menu {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin: 50px;
+    align-items: center;
+    gap: 20px;
+    margin: 0px 0px 50px;
     list-style: none;
   }
   .menu__button {
+    display: flex;
     list-style: none;
     border: none;
     outline: none;
@@ -36,21 +38,20 @@
     transition: ease 150ms;
   }  
   .cards {
+    display: flex;
     list-style: none;
-  
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   
-    display: flex;
   }
   .cards__list{
     position: relative;
     margin-bottom: 80px;
-    width: 365px;
+    width: 350px;
     border: solid 1px $gray-1;
     padding-bottom: 80px;
     border-radius: 10px;
-
+  
     &:hover {
       box-shadow: rgba(82, 82, 82, 0.3) 0 3px 5px;
       transition-timing-function: $transition-timing-function;
@@ -66,11 +67,17 @@
       transition-timing-function: $transition-timing-function;
       transition: all ease 250ms;
     }
+
+  .cards__info{
+    width: 350px;
+  }
   }
   .cards__title  {
     color: $primary-black-color;
     padding: 15px;
     z-index: 5;
+    font-size: 20px;
+
 
   }
   .cards__text{
@@ -118,4 +125,26 @@
     visibility: hidden;
 
     z-index: 1;
+}
+@media screen and (min-width:780px) {
+
+  .portfolio .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  }
+  .portfolio{
+    margin: 20px;
+
+  }
+  .cards{
+    justify-content: space-between;
+    .cards__list{
+    width: 365px;
+
+    }
+  }
 }
