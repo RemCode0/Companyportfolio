@@ -62,15 +62,12 @@
       visibility: visible;
       padding: 50px 50px;
     
-      height: 300px;
+      height:273px;
       transition-delay: 50ms;
       transition-timing-function: $transition-timing-function;
       transition: all ease 250ms;
     }
 
-  .cards__info{
-    width: 350px;
-  }
   }
   .cards__title  {
     color: $primary-black-color;
@@ -106,7 +103,7 @@
     text-align: justify;
     bottom: 70px;
     transform: translatey(-6%);
-    width: 365px;
+    width: 350px;
     height: 0;
     padding: 0px 50px;
 
@@ -126,7 +123,7 @@
 
     z-index: 1;
 }
-@media screen and (min-width:780px) {
+@media screen and (min-width:768px) {
 
   .portfolio .menu {
     display: flex;
@@ -140,11 +137,107 @@
     margin: 20px;
 
   }
-  .cards{
-    justify-content: space-between;
-    .cards__list{
-    width: 365px;
 
+  .cards {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+  }
+  .cards__list{
+    position: relative;
+    margin-bottom: 80px;
+    width: 350px;
+    border: solid 1px $gray-1;
+    padding-bottom: 80px;
+    border-radius: 10px;
+  
+    &:hover {
+      box-shadow: rgba(82, 82, 82, 0.3) 0 3px 5px;
+      transition-timing-function: $transition-timing-function;
+      transition: $transition;
+    }
+
+    &:hover .cards__info {
+      visibility: visible;
+      padding: 50px 50px;
+    
+      height: 275px;
+      transition-delay: 50ms;
+      transition-timing-function: $transition-timing-function;
+      transition: all ease 250ms;
     }
   }
+  .cards__info {
+    position:absolute;
+    text-align: justify;
+    bottom: 70px;
+    transform: translatey(-6%);
+    width: 350px;
+    height: 0;
+    padding: 0px 50px;
+  }
+  .cards{
+    justify-content: space-between;
+  }  
+}
+@media screen and (min-width:768px) {
+
+  .portfolio .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  }
+  .portfolio{
+    margin: 20px;
+
+  }
+
+  .cards {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+  }
+  .cards__list{
+    position: relative;
+    margin-bottom: 80px;
+    width: 350px;
+    border: solid 1px $gray-1;
+    padding-bottom: 80px;
+    border-radius: 10px;
+  
+    &:hover {
+      box-shadow: rgba(82, 82, 82, 0.3) 0 3px 5px;
+      transition-timing-function: $transition-timing-function;
+      transition: $transition;
+    }
+
+    &:hover .cards__info {
+      visibility: visible;
+      padding: 50px 50px;
+    
+      height: 275px;
+      transition-delay: 50ms;
+      transition-timing-function: $transition-timing-function;
+      transition: all ease 250ms;
+    }
+  }
+  .cards__info {
+    position:absolute;
+    text-align: justify;
+    bottom: 70px;
+    transform: translatey(-6%);
+    width: 350px;
+    height: 0;
+    padding: 0px 50px;
+  }
+  .cards{
+    justify-content: space-between;
+  }  
 }

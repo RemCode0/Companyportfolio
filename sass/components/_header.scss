@@ -4,6 +4,17 @@ header{
 .nav {
   display: none;
 }
+.page-header{
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+  background-color: $primary-white-color;
+
+  border: 1px solid #ECECEC;
+  filter: drop-shadow(0px 1px 8px #00000012)
+}
 .header__container {
   display: flex;
     justify-content:space-between;
@@ -33,17 +44,6 @@ header{
     }
   }
   
-  .page-header{
-    position: absolute;
-    top: 0;
-    height: 80px;
-    width: 100%;
-    z-index: 1;
-    background-color: $primary-white-color;
-  
-    border: 1px solid #ECECEC;
-    filter: drop-shadow(0px 1px 8px #00000012)
-  }
   
   .nav__menu {
     display: none;
@@ -212,6 +212,18 @@ header{
   header{
     height: 80px;
   }
+  .page-header{
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    background-color: $primary-white-color;
+  
+    border: 1px solid #ECECEC;
+    filter: drop-shadow(0px 1px 8px #00000012);
+  
+  }
   .header__container {
     display: flex;
     justify-content:space-between;
@@ -236,18 +248,6 @@ header{
       display: none;
     }
     
-    .page-header{
-      position: absolute;
-      top: 0;
-      height: 80px;
-      width: 100%;
-      z-index: 1;
-      background-color: $primary-white-color;
-    
-      border: 1px solid #ECECEC;
-      filter: drop-shadow(0px 1px 8px #00000012);
-    
-    }
     
     .nav{
       
@@ -353,7 +353,7 @@ header{
     justify-content:center;
     gap: 150px;
     height: 100%;
-
+  }
     .nav,
     .nav__logo,
     .nav__menu,
@@ -477,7 +477,7 @@ header{
       transition-timing-function: $transition-timing-function;
       transition: ease 150ms;
     
-    }
+
   }
   
 

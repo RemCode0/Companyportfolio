@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-    padding: 100px $container-padding;
+    padding: 150px $container-padding;
     position: relative;
     text-align: center;
     filter: drop-shadow(0px 5px 8px #0000002a);
@@ -74,6 +74,34 @@
         background-size: cover;
         background-position: center;
         padding: 200px $container-padding;
+        position: relative;
+        text-align: center;
+        filter: drop-shadow(0px 5px 8px #0000002a);
+      
+      }
+    .service__title {
+        font-size: 44px;
+        line-height: 60px;
+
+        position: relative;
+        z-index: 5;
+    }
+    .service__button{
+        position: relative;
+        z-index: 5;
+    }
+    .service__overlay {
+        position: absolute;
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px)  {
+    .service {
+        background: url("../images/img_hero.jpg");
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center;
+        padding: 250px $container-padding;
         position: relative;
         text-align: center;
         filter: drop-shadow(0px 5px 8px #0000002a);
