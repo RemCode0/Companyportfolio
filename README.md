@@ -1,6 +1,6 @@
-# goit-markup-hw-08
- adaptative desing
+# Company Portfolio Design 
+ adaptative web style
  
 ------------------LIVE--SERVER--------------------
 
-https://dimitr-remicio.github.io/goit-markup-hw-08/
+https://remcode0.github.io/Companyportfolio/
